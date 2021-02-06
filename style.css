@@ -1,0 +1,417 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE COLORS & FONTS
+  ========================================
+*/
+
+html{
+  font-size: 62.5%;
+}
+body *{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200px;
+}
+h1, h2{
+    font-size: 6.4rem;
+    letter-spacing: -0.32px;
+    line-height: 67.2px;
+    font-weight: bold;
+}
+h3{
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+h4{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+h5{
+  font-size: 1.8rem;
+  color: #999999;
+}
+h6{
+    color: #b5aead;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .08em;
+    font-size: 1.5rem;
+}
+p, span{
+    font-size: 1.8rem;
+  line-height: 3.6rem;
+}
+li, .arrow{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.number{
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+.quote{
+  font-style: italic;
+}
+/*
+  ========================================
+  BACKGROUNDS
+  ========================================
+*/
+.smallGreenBlock{
+    height: 240px;
+    background:#19a49c;
+}
+.greenRectangle{
+    background: url('https://media.discordapp.net/attachments/797197235091013683/798212373826502716/Green_Block.JPG') no-repeat;
+  background-size: 15% 100%;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  margin: 0 auto;
+}
+.smallGreenBlock{
+  background: url('https://media.discordapp.net/attachments/797197235091013683/798212373826502716/Green_Block.JPG') no-repeat;
+  background-size: 10vw 200px;
+  width: 100%;
+  height: 100%;
+  background-position: bottom left;
+  margin: 0 auto;
+}
+.smallGreenBlock.second{
+  background-position: bottom right;
+}
+.greenRectangleNorm{
+  background: url('https://media.discordapp.net/attachments/797197235091013683/798212373826502716/Green_Block.JPG') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.grey{
+  background: #f5faf9;
+}
+  /*
+  ========================================
+  SPECIFIC ITEMS
+  ========================================
+*/
+.cupContainer{
+  width: 50%;
+}
+.yellowCircle{
+    width: 600px;
+    height:600px;
+    background: #fec353;
+    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+ion-icon{
+  color: red;
+  font-size: 1.5rem;
+}
+.mainCup{
+  width: 80%;
+  min-width: 500px;
+  height: auto;
+    position: relative;
+    top: 2%;
+    right: 2%;
+}
+img.customerImg{
+  height: 80px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  padding: 0;
+  border-bottom-color: #19a49c;
+}
+select{
+  border: none;
+  border-bottom: 3px solid black;
+}
+.blackLine{
+  width: 100%;
+  padding: 0.5rem;
+  background: white;
+  border-bottom: 2px solid black;
+}
+/*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+.hundred{
+  min-height: 100vh;
+  width: 100%;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.center{
+  text-align: center;
+}
+.spaced{
+  justify-content: space-between;
+}
+.half{
+width: 50%;
+}
+.oneThird{
+  width: 30%;
+}
+.fifty{
+  width: 47%;
+  height: auto;
+}
+.sixty{
+  width: 57%;
+}
+.fourty{
+  width: 35%;
+}
+.square{
+  width: 100%;
+}
+.pad{
+  padding: 0 10%;
+}
+.altPad{
+  padding: 0 7%;
+}
+.wrapMe{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.centerMe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*
+  ========================================
+  MINI LAYOUT
+  ========================================
+*/
+.logoWrapper{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+nav, .copyright{
+  height: 15vh;
+  width: 60%;
+  display: flex;
+  align-content: center;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+li{
+  align-self: center;
+}
+.oneThird img, .greenRectangleNorm img{
+  width: 100%;
+  height: auto;
+}
+.greenRectangle{
+  padding-bottom: 10vh;
+}
+.intro{
+  overflow: none;
+}
+.intro .half{
+  padding-left: 17%;
+}
+.intro .mainText{
+  padding: 20vh 0 10vh 0;
+}
+.intro .column{
+  padding: 10vh 3vw 0 0;
+}
+.intro .container{
+  width: 110%;
+}
+.shiftDown{
+  position: relative;
+  top: 10vh;
+}
+.feedback.row{
+  flex-direction: row;
+}
+.greenRectangleNorm{
+  position: relative;
+  left: 10vw;
+}
+.greenRectangleNorm img{
+  position: relative;
+  left: -5vw;
+  top: 7vh;
+}
+.twoCups{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.cup{
+  height: 90%;
+  width: auto%;
+}
+.mainText *, h2, p, h3, h4{
+  padding: 1rem 0;
+}
+.arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow *{
+  padding-right: 1rem;
+}
+.padLeft{
+  padding-left: 1rem;
+}
+.padBot{
+  padding-bottom: 15vh;
+}
+select{
+  justify-self: flex-start;
+}
+button{
+  margin-left: 2rem;
+}
+.news{
+  position: relative;
+  bottom: 10vh;
+}
+.news .oneThird, .products .fifty, #imageMap, {
+  min-width: 300px;
+}
+.intro .row{
+  width: 100%;
+  overflow: hidden;
+}
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+html {
+  scroll-behavior: smooth;
+}
+li:hover, .arrow:hover{
+  color: red;
+  cursor: pointer;
+  transition: 0.3s;
+}
+a:visited, a:link{
+  text-decoration: none;
+  color: inherit;
+}
+select: active, select:focus{
+  border: inherit;
+}
+.hidden{
+  display: none;
+}
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media (max-width: 1024px){
+  .news .row{
+    justify-content: space-around;
+  }
+  .cupContainer{
+    display: none;
+  }
+
+}
+@media (max-width:620px){
+  nav, .greenRectangleNorm, .twoCups img{
+    display: none;
+  }
+  .customerFeedback{
+    width: 100%;
+  }
+}
